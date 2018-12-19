@@ -15,6 +15,22 @@ public class AmeriaBank implements Bank {
         this.customers = customers;
     }
 
+    public List<Card> getBankCardList() {
+        return bankCardList;
+    }
+
+    public void setBankCardList(List<Card> bankCardList) {
+        this.bankCardList = bankCardList;
+    }
+
+    public List<Customer> getCustomers() {
+        return customers;
+    }
+
+    public void setCustomers(List<Customer> customers) {
+        this.customers = customers;
+    }
+
     @Override
     public boolean checkIfCustomerValid(Customer customer) {
         return customers.contains(customer);
